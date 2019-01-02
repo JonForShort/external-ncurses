@@ -5,6 +5,6 @@ include (ExternalProject)
 ExternalProject_Add (
   ncurses
   SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
-  CONFIGURE_COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/configure --prefix=${CMAKE_CURRENT_SOURCE_DIR}/out
+  CONFIGURE_COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/configure --prefix=${DIR_PROJECT_OUT}
   BUILD_COMMAND ${MAKE}
 )
